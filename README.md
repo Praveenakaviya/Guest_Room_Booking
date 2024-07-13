@@ -31,13 +31,12 @@ This project is a full-stack application built to facilitate booking guest rooms
 ## Technologies Used
 - **Frontend:** React, React Router DOM, Axios
 - **Backend:** Node.js, Express, MongoDB, Mongoose
-- **Authentication:** JSON Web Tokens (JWT)
 - **Additional Tools:** Bootstrap (for styling), multer (for handling file uploads)
 
 ## Setup Instructions
 1. Clone the repository.
 2. Navigate to the frontend and backend directories and install dependencies (`npm install`).
-3. Set up environment variables (`.env` file) for MongoDB URI and JWT secret.
+3. chane url of mongo db in db.js
 4. Start the backend server (`npm start` in the backend directory).
 5. Start the frontend server (`npm start` in the frontend directory).
 
