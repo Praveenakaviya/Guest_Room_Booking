@@ -1,0 +1,56 @@
+/* OwnerProfile.css */
+
+.owner-profile-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.owner-profile-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.owner-profile-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.owner-profile-container label {
+  margin-bottom: 8px;
+}
+
+.owner-profile-container input[type="text"],
+.owner-profile-container input[type="email"],
+.owner-profile-container input[type="number"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.owner-profile-container button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.owner-profile-container button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .owner-profile-container {
+    width: 100%;
+    padding: 10px;
+  }
+}

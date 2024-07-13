@@ -1,0 +1,39 @@
+/* RoomForm.css */
+
+.RoomForm {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.RoomForm input,
+.RoomForm textarea,
+.RoomForm button {
+  display: block;
+  width: calc(100% - 22px); /* Adjusted width to account for padding and border */
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.RoomForm input[type='file'] {
+  width: 100%; /* Full width for file input */
+  padding: 8px;
+}
+
+.RoomForm button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.RoomForm button:hover {
+  background-color: #45a049;
+}

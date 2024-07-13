@@ -1,0 +1,493 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+}
+
+.logo img {
+  height: 100px; 
+  color:white;/* Adjust the height of the logo as needed */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.main-section {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 70px); /* Adjust the height as needed */
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 55%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  color:whitesmoke;
+  text-align: center;
+}
+
+.quote {
+  font-size: 4rem; /* Adjust the font size as needed */
+}
+.round-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  background-color:whitesmoke;
+}
+
+.round-image {
+  text-align: center;
+  margin: 0 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Added transition properties */
+  background-color: #fff;
+}
+
+.round-image:hover {
+  transform: translateY(-10px); /* Slide up slightly on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+.round-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%; /* Ensures images are displayed as circles */
+  display: block; /* Ensures images are displayed as blocks */
+  margin: 0 auto; /* Centers images horizontally */
+}
+
+.round-image h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+}
+
+.content-container {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.point-box {
+  background-color: #605e5e;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px; /* Set a fixed width for consistency */
+  height: 150px; /* Set a fixed height for consistency */
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease, color 0.3s ease; /* Add smooth transitions */
+  display: inline-block; /* Ensure inline display for consistent sizing */
+  margin-right: 20px; /* Adjust spacing between boxes */
+  margin-bottom: 25px; /* Adjust spacing between rows */
+}
+
+.point-box:hover {
+  transform: scale(1.05); /* Scale up slightly on hover */
+  background-color: #302e2e; /* Darken background on hover */
+  color: #fff; /* Change text color on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.point-box ul {
+  list-style-type: none; /* Removes default list bullets */
+  padding: 0;
+}
+
+.point-box li {
+  margin-bottom: 8px;
+}
+
+.point-box p {
+  margin: 0;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+/* Left Side Image styles */
+.about-image {
+  flex: 1;
+  max-width: 100%;
+  margin-bottom: 200px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  animation: enlargeImage 2s; /* New animation */
+}
+
+.about-image img:hover {
+  transform: scale(1.1); /* Larger scale on hover */
+  animation: rotateImage 0.6s; /* Animation on hover */
+}
+
+/* Right Side Content styles */
+.about-content {
+  flex: 1;
+  max-width: 100%;
+  text-align: center;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
+/* Responsive adjustments */
+@media screen and (min-width: 768px) {
+  .about-section {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-around;
+  }
+
+  .about-image {
+      max-width: 40%;
+      margin-bottom: 0;
+  }
+
+  .about-content {
+      max-width: 50%;
+      text-align: left;
+  }
+
+  
+}
+
+/* Keyframes for new animations */
+@keyframes enlargeImage {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.1);
+  }
+}
+
+@keyframes rotateImage {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(10deg);
+  }
+}
+
+
+.vision {
+  margin: 10px;
+  padding: 10%; /* Increased padding for better box effect */
+  background-color: lightgray; /* Light gray background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effect */
+  animation: fadeInAnimation 1s; /* Animation when the box appears */
+  color:#0056b3;
+}
+
+.vision:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  background-color: white; /* White background on hover */
+  border-color: gray; /* Gray border on hover */
+  animation: bounceAnimation 0.6s;
+  border-color: gold; /* Animation on hover */
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+@keyframes bounceAnimation {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-10px);
+  }
+  60% {
+      transform: translateY(-5px);
+  }
+}
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-bar input,
+.search-bar button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.search-bar button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+.half-page-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh; /* Adjust height as needed */
+  background-color: #f0f0f0; /* Background color */
+}
+
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.round-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Add margin to create space between sections */
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px; /* Adjust as needed for vertical space */
+}
+
+.about-image img {
+  width: 500px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 100%;
+}
+
+.about-content {
+  margin-left: 20px; /* Adjust as needed */
+}
+
+.vision {
+  margin: 0;
+}
+
+.point-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.point-box li {
+  margin-bottom: 10px; /* Adjust as needed */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.part {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 45%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.round-text {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.round-text h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.round-text p {
+  margin: 10px 0 0;
+  font-size: 14px;
+}
+
+hr {
+  width: 80%;
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}/* FAQPage.css */
+
+.faq-page {
+  max-width: 12000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: lightgray;
+}
+
+.faq-list {
+  margin-top: 20px;
+}
+
+.faq-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: white;
+  transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.faq-item:hover {
+  transform: translateY(-5px); /* Lift the item up on hover */
+}
+
+.faq-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.faq-item-container {
+  padding: 3px; /* Padding inside the container */
+}
+
+
+
+.footer {
+  background-color: #333;
+  color:black;
+  padding: 50px 0;
+}
+
+.footer h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, color 0.3s ease; /* Transition for transform and color changes */
+}
+
+.footer ul li:hover {
+  transform: translateY(-3px); /* Move the item up slightly on hover */
+  color: blanchedalmond; /* Change text color to gold on hover */
+}

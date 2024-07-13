@@ -1,0 +1,100 @@
+/* OwnerSignUp.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.signUp {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.signUp h2 {
+  color: #333333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.signUp form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signUp form div {
+  margin-bottom: 15px;
+}
+
+.signUp label {
+  color: #555555;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.signUp input[type="email"],
+.signUp input[type="password"],
+.signUp input[type="text"] {
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 10px;
+  width: calc(100% - 22px); /* Account for padding */
+}
+
+.signUp button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.signUp button:hover {
+  background-color: #0056b3;
+}
+
+.errorHandling {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.success,
+.error {
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+.alreadyHaveAnAccountOrNot {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.alreadyHaveAnAccountOrNot a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.alreadyHaveAnAccountOrNot a:hover {
+  text-decoration: underline;
+}
